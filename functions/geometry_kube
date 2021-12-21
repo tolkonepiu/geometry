@@ -32,5 +32,5 @@ geometry_kube() {
   )
 
   local separator=${GEOMETRY_KUBE_SEPARATOR:-"|"}
-  echo -n ${(pj.$separator.)geometry_kube_details}
+  echo -n :: ${(pj.$separator.)geometry_kube_details}
 }
