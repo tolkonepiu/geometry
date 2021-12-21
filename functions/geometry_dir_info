@@ -1,4 +1,4 @@
 # geometry_dir_info - prompt plugin which display directory information (files, size).
 geometry_dir_info() {
-  echo "::" $(/bin/ls -1 | /usr/bin/wc -l | sed 's: ::g') files, $(du -sh 2>&1 | grep -v '^du:' | sed 's/       .//')
+  echo "::" $(/bin/ls -1 | /usr/bin/wc -l | sed 's: ::g') files, $(du -sh 2>&1 | grep -v '^du:' | sed 's/	.//')
 }
